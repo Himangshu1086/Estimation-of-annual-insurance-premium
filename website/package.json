@@ -1,0 +1,16 @@
+{
+  "name": "insurance_premium",
+  "version": "1.0.0",
+  "description": "Predict annual premium for health insurance",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "jskit-learn": "^0.2.0"
+  }
+}
