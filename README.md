@@ -4,19 +4,34 @@ Implemented Artificial Neural Network with multiple variable attributes to estim
 <br>
 ## Home Page
 <br>
-![image](https://github.com/Himangshu1086/Estimation-of-annual-insurance-premium/blob/master/website/public/image/homepage.png)
+
+![1](https://github.com/Himangshu1086/Estimation-of-annual-insurance-premium/blob/master/website/public/image/homepage.png)
+
 <br>
+
 ## BMI Calculation
+
 <br>
-![image]("https://github.com/Himangshu1086/Estimation-of-annual-insurance-premium/blob/master/website/public/image/bmi_cal.png")
+
+![2](https://github.com/Himangshu1086/Estimation-of-annual-insurance-premium/blob/master/website/public/image/bmi_cal.png)
+
 <br>
+
 ## Estimation form 
+
 <br>
-![image]("https://github.com/Himangshu1086/Estimation-of-annual-insurance-premium/blob/master/website/public/image/estimationform.png")
+
+![3](https://github.com/Himangshu1086/Estimation-of-annual-insurance-premium/blob/master/website/public/image/estimationform.png)
+
 <br>
-![image]("https://github.com/Himangshu1086/Estimation-of-annual-insurance-premium/blob/master/website/public/image/estimation_with_value.png")
+
+![4](https://github.com/Himangshu1086/Estimation-of-annual-insurance-premium/blob/master/website/public/image/estimation_with_value.png)
+
 <br>
+
 ## Prediction window
+
 <br>
-![image]("https://github.com/Himangshu1086/Estimation-of-annual-insurance-premium/blob/master/website/public/image/prediction.png")
+
+![5](https://github.com/Himangshu1086/Estimation-of-annual-insurance-premium/blob/master/website/public/image/prediction.png)
 <br>
