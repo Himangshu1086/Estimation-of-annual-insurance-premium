@@ -4,7 +4,7 @@ Implemented Artificial Neural Network with multiple variable attributes to estim
 <br>
 ## Home Page
 <br>
-![image]("https://github.com/Himangshu1086/Estimation-of-annual-insurance-premium/blob/master/website/public/image/homepage.png")
+![image](https://github.com/Himangshu1086/Estimation-of-annual-insurance-premium/blob/master/website/public/image/homepage.png)
 <br>
 ## BMI Calculation
 <br>
