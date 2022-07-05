@@ -6,28 +6,115 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.5.2/dist/tf.min.js">
     </script>
-   <script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script> 
-   <script src="https://cdn.jsdelivr.net/npm/danfojs@0.3.2/lib/bundle.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
+   <!-- <script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script> 
+   <script src="https://cdn.jsdelivr.net/npm/danfojs@0.3.2/lib/bundle.min.js"></script> -->
+   <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
+<link rel="stylesheet" href="style.css" />
+<style>
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+    #form_for_estimate{
+        display: none;
+    }
+</style>
 </head>
   
 <body>
     <div>
-        <form style="display:flex;flex-direction:column;width:60%;margin:auto;">
-            <h1 style="text-align: center;">Estimate Annual Insurance Premium</h1>
-            <input placeholder="Age"></input>
-            <input placeholder="BMI"></input>
-            <input placeholder="Children"></input>
-            <select name="Did you smoke ?"  id="dog-names">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <h3 style="position: absolute; z-index:3;color:rgb(178, 229, 248);margin: 25px;font-family: italic;font-weight: 600;letter-spacing: -2px;">Health Insurance</h3>
+            <img src="azadi.png" style="position: absolute;right:0%;z-index:3;" />
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner" style="background-color: black" >
+              <div class="carousel-item active" >
+                <img style="width: 100%;height:100vh;opacity:0.4;" src="https://images.unsplash.com/photo-1615461065624-21b562ee5566?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1340&q=80" class="d-block w-100" alt="...">
+                <div style="position: absolute;left:-15%; top: 30%;" class="carousel-caption d-none d-md-block">
+                  <h5 style="font-size:55px;color: rgb(97, 201, 250);font-weight: 600;letter-spacing: 2px;">Your Health Insurance Specialist</h5>
+                  <p style="font-size: 25px; font-weight:300px; letter-spacing: 2px;">Health plan crafted with care for your loved ones</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img  style="width: 100%;height:100vh;opacity:0.4;" src="https://images.unsplash.com/photo-1549890762-0a3f8933bc76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1268&q=80" class="d-block w-100" alt="...">
+                <div style="width: 70%;position: absolute;left:0; top: 30%;" class="carousel-caption d-none d-md-block">
+                    <h5   style=" font-size:55px;color: rgb(97, 201, 250);font-weight: 600;letter-spacing: 2px;">When it comes to Health Insurance, there should be no compromise</h5>
+                    <p style="font-size: 25px; font-weight:300px; letter-spacing: 2px;">Caringly crafted health plans</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img  style="width: 100%;height:100vh;opacity:0.4;" src="https://images.unsplash.com/photo-1614144477821-9daf217ae100?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="d-block w-100" alt="...">
+                <div style="width: 50%;position: absolute;left:10%; top: 30%;" class="carousel-caption d-none d-md-block">
+                    <h5  style="font-size:55px;color: rgb(97, 201, 250);font-weight: 600;letter-spacing: 2px;">We are there when you need us the most</h5>
+                    <p style="font-size: 25px; font-weight:300px; letter-spacing: 2px;">Get health Insurance a very affordable premium</p>
+                  </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+        <div style="height: 150px;justify-content: center; position: absolute;bottom:10%; right:13% ; z-index:3;background-color:  rgb(43, 88, 112);
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
+        display: flex;flex-direction: column ;padding: 30px;border-radius: 5px;">
+            <p style="text-align:center;font-weight:bolder;letter-spacing:1px;color:rgb(255, 255, 255);">Estimate your Annual Health Insurance Premium ? </p>
+            <button onclick="estimate()" style="border: none;border-radius:3px;background-color: rgb(141, 201, 246);width: 50%;margin: auto;padding: 4px 10px;">Estimate</button>
+        </div>
+
+       
+        <div style="height: 150px;justify-content: center; position: absolute;bottom:10%; left:13% ; z-index:3;background-color: rgb(43, 88, 112);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
+        display: flex;flex-direction: column; padding: 30px;border-radius: 10px;">
+           <p style="text-align:center;font-weight:bolder;letter-spacing:1px;color:rgb(255, 255, 255);">Want to know your BMI ?</p>
+          <div style="display:flex;">
+            <input id="weight" min="1" style="margin:4px;padding:4px;border:none;border-radius:3px;text-decoration:none;" type="number" placeholder="Weight (in kg)"></input>
+            <input id="height" min="1" style="margin:4px;padding:4px;border:none;border-radius:3px;text-decoration:none;" type="number" placeholder="Height (in cm)"></input>
+            <button onclick="get_bmi()" style="border: none;border-radius:3px;background-color: rgb(141, 201, 246);width: 50%;margin: auto;padding: 4px 10px;">Get here</button>
+        </div>
+       <p  style="text-align: center;color: white;letter-spacing: 1px;padding-top:5px;">  Your BMI : <span  id="show_bmi"></span></p>
+        </div>
+
+       <div id="form_for_estimate" style="position:absolute; z-index:5;top:0;left:0% ;backdrop-filter: blur(5px);width: 100%;height: 100vh; ">
+        <form action="/predict" method="POST" 
+        style="display:flex;flex-direction:column;width:60%;margin:auto;position: relative;
+        border-radius: 7px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        top: 15%; background-color: rgb(27, 56, 82);padding: 40px;">
+            <h1 style="text-align: center; color: white;letter-spacing: 1px;padding: 5px;">Estimate Annual Insurance Premium</h1>
+            <input style="border: none; border-radius: 3px; padding: 10px;margin: 10px; outline: none;" type="number" min="1" placeholder="Age" name="age" required></input>
+            <input  style="border: none; border-radius: 3px; padding: 10px;margin: 10px; outline: none;" type="number" step="0.01" min="0" placeholder="BMI" name="bmi" required></input>
+            <input  style="border: none; border-radius: 3px; padding: 10px;margin: 10px; outline: none;" type="number" min="0" placeholder="Children" name="children" required></input>
+            <select style="border: none; border-radius: 3px; padding: 10px;margin: 10px; outline: none;"  name="smoke" id="smoke" required>
+                <option aria-readonly="true"  value="">Do you smoke ?</option>
                 <option value="1">Yes</option>
                 <option value="0">No</option>
             </select>
-            <select name="Did you smoke ?"  id="dog-names">
+            <select style="border: none; border-radius: 3px; padding: 10px;margin: 10px; outline: none;"  name="sex"  id="smoke" required>
+                <option aria-readonly="true"   value="">What is your Gender ?</option>
                 <option value="1">Male</option>
                 <option value="0">Female</option>
             </select>
-            <button>Estimate the price</button>
+            <input style="border: none; border-radius: 3px; padding: 10px;margin: 10px; outline: none;background-color: rgb(83, 158, 238);" type="submit"></input>
         </form>
+    </div> 
     </div>
       
     <script src="script.js"></script>

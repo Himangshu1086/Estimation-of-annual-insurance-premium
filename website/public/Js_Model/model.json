@@ -8,7 +8,7 @@
     "model_config": {
       "class_name": "Sequential",
       "config": {
-        "name": "sequential_2",
+        "name": "sequential_3",
         "layers": [
           {
             "class_name": "InputLayer",
@@ -17,17 +17,17 @@
               "dtype": "float32",
               "sparse": false,
               "ragged": false,
-              "name": "dense_30_input"
+              "name": "dense_48_input"
             }
           },
           {
             "class_name": "Dense",
             "config": {
-              "name": "dense_30",
+              "name": "dense_48",
               "trainable": true,
               "batch_input_shape": [null, 5],
               "dtype": "float32",
-              "units": 480,
+              "units": 256,
               "activation": "relu",
               "use_bias": true,
               "kernel_initializer": {
@@ -45,7 +45,7 @@
           {
             "class_name": "Dense",
             "config": {
-              "name": "dense_31",
+              "name": "dense_49",
               "trainable": true,
               "dtype": "float32",
               "units": 384,
@@ -66,112 +66,7 @@
           {
             "class_name": "Dense",
             "config": {
-              "name": "dense_32",
-              "trainable": true,
-              "dtype": "float32",
-              "units": 416,
-              "activation": "relu",
-              "use_bias": true,
-              "kernel_initializer": {
-                "class_name": "GlorotUniform",
-                "config": { "seed": null }
-              },
-              "bias_initializer": { "class_name": "Zeros", "config": {} },
-              "kernel_regularizer": null,
-              "bias_regularizer": null,
-              "activity_regularizer": null,
-              "kernel_constraint": null,
-              "bias_constraint": null
-            }
-          },
-          {
-            "class_name": "Dense",
-            "config": {
-              "name": "dense_33",
-              "trainable": true,
-              "dtype": "float32",
-              "units": 416,
-              "activation": "relu",
-              "use_bias": true,
-              "kernel_initializer": {
-                "class_name": "GlorotUniform",
-                "config": { "seed": null }
-              },
-              "bias_initializer": { "class_name": "Zeros", "config": {} },
-              "kernel_regularizer": null,
-              "bias_regularizer": null,
-              "activity_regularizer": null,
-              "kernel_constraint": null,
-              "bias_constraint": null
-            }
-          },
-          {
-            "class_name": "Dense",
-            "config": {
-              "name": "dense_34",
-              "trainable": true,
-              "dtype": "float32",
-              "units": 64,
-              "activation": "relu",
-              "use_bias": true,
-              "kernel_initializer": {
-                "class_name": "GlorotUniform",
-                "config": { "seed": null }
-              },
-              "bias_initializer": { "class_name": "Zeros", "config": {} },
-              "kernel_regularizer": null,
-              "bias_regularizer": null,
-              "activity_regularizer": null,
-              "kernel_constraint": null,
-              "bias_constraint": null
-            }
-          },
-          {
-            "class_name": "Dense",
-            "config": {
-              "name": "dense_35",
-              "trainable": true,
-              "dtype": "float32",
-              "units": 288,
-              "activation": "relu",
-              "use_bias": true,
-              "kernel_initializer": {
-                "class_name": "GlorotUniform",
-                "config": { "seed": null }
-              },
-              "bias_initializer": { "class_name": "Zeros", "config": {} },
-              "kernel_regularizer": null,
-              "bias_regularizer": null,
-              "activity_regularizer": null,
-              "kernel_constraint": null,
-              "bias_constraint": null
-            }
-          },
-          {
-            "class_name": "Dense",
-            "config": {
-              "name": "dense_36",
-              "trainable": true,
-              "dtype": "float32",
-              "units": 64,
-              "activation": "relu",
-              "use_bias": true,
-              "kernel_initializer": {
-                "class_name": "GlorotUniform",
-                "config": { "seed": null }
-              },
-              "bias_initializer": { "class_name": "Zeros", "config": {} },
-              "kernel_regularizer": null,
-              "bias_regularizer": null,
-              "activity_regularizer": null,
-              "kernel_constraint": null,
-              "bias_constraint": null
-            }
-          },
-          {
-            "class_name": "Dense",
-            "config": {
-              "name": "dense_37",
+              "name": "dense_50",
               "trainable": true,
               "dtype": "float32",
               "units": 480,
@@ -192,10 +87,10 @@
           {
             "class_name": "Dense",
             "config": {
-              "name": "dense_38",
+              "name": "dense_51",
               "trainable": true,
               "dtype": "float32",
-              "units": 448,
+              "units": 480,
               "activation": "relu",
               "use_bias": true,
               "kernel_initializer": {
@@ -213,7 +108,175 @@
           {
             "class_name": "Dense",
             "config": {
-              "name": "dense_39",
+              "name": "dense_52",
+              "trainable": true,
+              "dtype": "float32",
+              "units": 320,
+              "activation": "relu",
+              "use_bias": true,
+              "kernel_initializer": {
+                "class_name": "GlorotUniform",
+                "config": { "seed": null }
+              },
+              "bias_initializer": { "class_name": "Zeros", "config": {} },
+              "kernel_regularizer": null,
+              "bias_regularizer": null,
+              "activity_regularizer": null,
+              "kernel_constraint": null,
+              "bias_constraint": null
+            }
+          },
+          {
+            "class_name": "Dense",
+            "config": {
+              "name": "dense_53",
+              "trainable": true,
+              "dtype": "float32",
+              "units": 352,
+              "activation": "relu",
+              "use_bias": true,
+              "kernel_initializer": {
+                "class_name": "GlorotUniform",
+                "config": { "seed": null }
+              },
+              "bias_initializer": { "class_name": "Zeros", "config": {} },
+              "kernel_regularizer": null,
+              "bias_regularizer": null,
+              "activity_regularizer": null,
+              "kernel_constraint": null,
+              "bias_constraint": null
+            }
+          },
+          {
+            "class_name": "Dense",
+            "config": {
+              "name": "dense_54",
+              "trainable": true,
+              "dtype": "float32",
+              "units": 192,
+              "activation": "relu",
+              "use_bias": true,
+              "kernel_initializer": {
+                "class_name": "GlorotUniform",
+                "config": { "seed": null }
+              },
+              "bias_initializer": { "class_name": "Zeros", "config": {} },
+              "kernel_regularizer": null,
+              "bias_regularizer": null,
+              "activity_regularizer": null,
+              "kernel_constraint": null,
+              "bias_constraint": null
+            }
+          },
+          {
+            "class_name": "Dense",
+            "config": {
+              "name": "dense_55",
+              "trainable": true,
+              "dtype": "float32",
+              "units": 320,
+              "activation": "relu",
+              "use_bias": true,
+              "kernel_initializer": {
+                "class_name": "GlorotUniform",
+                "config": { "seed": null }
+              },
+              "bias_initializer": { "class_name": "Zeros", "config": {} },
+              "kernel_regularizer": null,
+              "bias_regularizer": null,
+              "activity_regularizer": null,
+              "kernel_constraint": null,
+              "bias_constraint": null
+            }
+          },
+          {
+            "class_name": "Dense",
+            "config": {
+              "name": "dense_56",
+              "trainable": true,
+              "dtype": "float32",
+              "units": 480,
+              "activation": "relu",
+              "use_bias": true,
+              "kernel_initializer": {
+                "class_name": "GlorotUniform",
+                "config": { "seed": null }
+              },
+              "bias_initializer": { "class_name": "Zeros", "config": {} },
+              "kernel_regularizer": null,
+              "bias_regularizer": null,
+              "activity_regularizer": null,
+              "kernel_constraint": null,
+              "bias_constraint": null
+            }
+          },
+          {
+            "class_name": "Dense",
+            "config": {
+              "name": "dense_57",
+              "trainable": true,
+              "dtype": "float32",
+              "units": 384,
+              "activation": "relu",
+              "use_bias": true,
+              "kernel_initializer": {
+                "class_name": "GlorotUniform",
+                "config": { "seed": null }
+              },
+              "bias_initializer": { "class_name": "Zeros", "config": {} },
+              "kernel_regularizer": null,
+              "bias_regularizer": null,
+              "activity_regularizer": null,
+              "kernel_constraint": null,
+              "bias_constraint": null
+            }
+          },
+          {
+            "class_name": "Dense",
+            "config": {
+              "name": "dense_58",
+              "trainable": true,
+              "dtype": "float32",
+              "units": 320,
+              "activation": "relu",
+              "use_bias": true,
+              "kernel_initializer": {
+                "class_name": "GlorotUniform",
+                "config": { "seed": null }
+              },
+              "bias_initializer": { "class_name": "Zeros", "config": {} },
+              "kernel_regularizer": null,
+              "bias_regularizer": null,
+              "activity_regularizer": null,
+              "kernel_constraint": null,
+              "bias_constraint": null
+            }
+          },
+          {
+            "class_name": "Dense",
+            "config": {
+              "name": "dense_59",
+              "trainable": true,
+              "dtype": "float32",
+              "units": 160,
+              "activation": "relu",
+              "use_bias": true,
+              "kernel_initializer": {
+                "class_name": "GlorotUniform",
+                "config": { "seed": null }
+              },
+              "bias_initializer": { "class_name": "Zeros", "config": {} },
+              "kernel_regularizer": null,
+              "bias_regularizer": null,
+              "activity_regularizer": null,
+              "kernel_constraint": null,
+              "bias_constraint": null
+            }
+          },
+          {
+            "class_name": "Dense",
+            "config": {
+              "name": "dense_60",
               "trainable": true,
               "dtype": "float32",
               "units": 1,
@@ -255,28 +318,34 @@
   },
   "weightsManifest": [
     {
-      "paths": ["group1-shard1of1.bin"],
+      "paths": ["group1-shard1of2.bin", "group1-shard2of2.bin"],
       "weights": [
-        { "name": "dense_30/kernel", "shape": [5, 480], "dtype": "float32" },
-        { "name": "dense_30/bias", "shape": [480], "dtype": "float32" },
-        { "name": "dense_31/kernel", "shape": [480, 384], "dtype": "float32" },
-        { "name": "dense_31/bias", "shape": [384], "dtype": "float32" },
-        { "name": "dense_32/kernel", "shape": [384, 416], "dtype": "float32" },
-        { "name": "dense_32/bias", "shape": [416], "dtype": "float32" },
-        { "name": "dense_33/kernel", "shape": [416, 416], "dtype": "float32" },
-        { "name": "dense_33/bias", "shape": [416], "dtype": "float32" },
-        { "name": "dense_34/kernel", "shape": [416, 64], "dtype": "float32" },
-        { "name": "dense_34/bias", "shape": [64], "dtype": "float32" },
-        { "name": "dense_35/kernel", "shape": [64, 288], "dtype": "float32" },
-        { "name": "dense_35/bias", "shape": [288], "dtype": "float32" },
-        { "name": "dense_36/kernel", "shape": [288, 64], "dtype": "float32" },
-        { "name": "dense_36/bias", "shape": [64], "dtype": "float32" },
-        { "name": "dense_37/kernel", "shape": [64, 480], "dtype": "float32" },
-        { "name": "dense_37/bias", "shape": [480], "dtype": "float32" },
-        { "name": "dense_38/kernel", "shape": [480, 448], "dtype": "float32" },
-        { "name": "dense_38/bias", "shape": [448], "dtype": "float32" },
-        { "name": "dense_39/kernel", "shape": [448, 1], "dtype": "float32" },
-        { "name": "dense_39/bias", "shape": [1], "dtype": "float32" }
+        { "name": "dense_48/kernel", "shape": [5, 256], "dtype": "float32" },
+        { "name": "dense_48/bias", "shape": [256], "dtype": "float32" },
+        { "name": "dense_49/kernel", "shape": [256, 384], "dtype": "float32" },
+        { "name": "dense_49/bias", "shape": [384], "dtype": "float32" },
+        { "name": "dense_50/kernel", "shape": [384, 480], "dtype": "float32" },
+        { "name": "dense_50/bias", "shape": [480], "dtype": "float32" },
+        { "name": "dense_51/kernel", "shape": [480, 480], "dtype": "float32" },
+        { "name": "dense_51/bias", "shape": [480], "dtype": "float32" },
+        { "name": "dense_52/kernel", "shape": [480, 320], "dtype": "float32" },
+        { "name": "dense_52/bias", "shape": [320], "dtype": "float32" },
+        { "name": "dense_53/kernel", "shape": [320, 352], "dtype": "float32" },
+        { "name": "dense_53/bias", "shape": [352], "dtype": "float32" },
+        { "name": "dense_54/kernel", "shape": [352, 192], "dtype": "float32" },
+        { "name": "dense_54/bias", "shape": [192], "dtype": "float32" },
+        { "name": "dense_55/kernel", "shape": [192, 320], "dtype": "float32" },
+        { "name": "dense_55/bias", "shape": [320], "dtype": "float32" },
+        { "name": "dense_56/kernel", "shape": [320, 480], "dtype": "float32" },
+        { "name": "dense_56/bias", "shape": [480], "dtype": "float32" },
+        { "name": "dense_57/kernel", "shape": [480, 384], "dtype": "float32" },
+        { "name": "dense_57/bias", "shape": [384], "dtype": "float32" },
+        { "name": "dense_58/kernel", "shape": [384, 320], "dtype": "float32" },
+        { "name": "dense_58/bias", "shape": [320], "dtype": "float32" },
+        { "name": "dense_59/kernel", "shape": [320, 160], "dtype": "float32" },
+        { "name": "dense_59/bias", "shape": [160], "dtype": "float32" },
+        { "name": "dense_60/kernel", "shape": [160, 1], "dtype": "float32" },
+        { "name": "dense_60/bias", "shape": [1], "dtype": "float32" }
       ]
     }
   ]
