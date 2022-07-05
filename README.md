@@ -1,8 +1,12 @@
 # Estimation-of-annual-insurance-premium
 <br>
-Implemented Artificial Neural Network with multiple variable attributes to estimate the annual insurance charge for a customer.
+
+## Implemented Artificial Neural Network with multiple variable attributes to estimate the annual insurance charge for a customer.
+
 <br>
+
 ## Home Page
+
 <br>
 
 ![1](https://github.com/Himangshu1086/Estimation-of-annual-insurance-premium/blob/master/website/public/image/homepage.png)
