@@ -3,7 +3,7 @@ const express = require("express");
 var bodyParser = require('body-parser');
 const app = express();
 const path = require("path")
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 const tf  = require("@tensorflow/tfjs")
 
 // Set public as static directory
